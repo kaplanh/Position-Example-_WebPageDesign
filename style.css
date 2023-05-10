@@ -1,0 +1,125 @@
+/*?ödev linki https://practice-cw.netlify.app/ */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border:2px solid red */
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#nav1 {
+  background-image: linear-gradient(
+    0deg,
+    rgba(194, 115, 194, 0.7) 0%,
+    rgba(151, 217, 225, 1) 100%
+  );
+  padding: 10px 10px 5px;
+  width: 100vw;
+  height: 16vh;
+}
+#nav1 .logo {
+  float: left;
+  padding: 0px 5px 2px 5px;
+}
+#nav1 .logo:hover {
+  cursor: pointer;
+}
+
+#nav1 .login {
+  float: right;
+  padding: 3rem;
+  font-size: 1.4rem;
+}
+
+.login a {
+  text-decoration: none;
+  color: #920101;
+  font-weight: 700;
+}
+.login a:hover {
+  border-bottom: 2px solid #920101;
+}
+
+#nav2 {
+  width: 100vw;
+  height: 12vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: sticky;
+  top: 0rem;
+  padding: 2rem;
+  background-image: linear-gradient(45deg, #fbda61 0%, #ff5acd 100%);
+  text-align: center;
+  z-index: 1;
+}
+#nav2 a {
+  padding: 10px;
+  margin-left: 30px;
+  font-family: "DynaPuff", cursive;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+  margin-right: 1rem;
+  letter-spacing: 1px;
+}
+
+#nav2 a:hover {
+  color: whitesmoke;
+}
+main {
+  width: 100vw;
+  height: 70vh;
+
+  background-image: url("./banner.jpg");
+  background-size: 100% 100%;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  position: relative;
+}
+.text {
+  position: absolute;
+  top: 20vh;
+  left: 10vh;
+}
+main h2 {
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0px 2px 4px black;
+}
+
+main h3 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: red;
+  text-shadow: 0px 2px 4px grey;
+}
+
+main button {
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #d9afd9;
+  font-weight: 700;
+}
+main button:hover {
+  opacity: 0.5;
+}
+section p {
+  width: 100vw;
+  height: auto;
+  text-align: justify;
+  margin-top: 8px;
+}
