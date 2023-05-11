@@ -1,60 +1,46 @@
-/*?ödev linki https://practice-cw.netlify.app/ */
-
-
-
+/*? RESET */
+/*?-----------------------------------*/
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  /* border:2px solid red */
 }
-html,
+
 body {
-  width: 100vw;
-  height: 100vh;
+  font-family: "Open Sans", sans-serif;
 }
 
-#nav1 {
-  background-image: linear-gradient(
-    0deg,
-    rgba(194, 115, 194, 0.7) 0%,
-    rgba(151, 217, 225, 1) 100%
-  );
-  padding: 10px 10px 5px;
-  width: 100vw;
-  height: 16vh;
-}
-#nav1 .logo {
-  float: left;
-  padding: 0px 5px 2px 5px;
-}
-#nav1 .logo:hover {
-  cursor: pointer;
+/*! HEADER  */
+/*!-----------------------------------*/
+header {
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  padding: 1rem;
 }
 
-#nav1 .login {
+header a img {
+  width: 60px;
+}
+
+header .sign-in {
   float: right;
-  padding: 3rem;
-  font-size: 1.4rem;
+  color: #920101;
+  padding-top: 1.7rem;
+  padding-right: 0.5rem;
 }
 
-.login a {
-  text-decoration: none;
+header .sign-in a {
   color: #920101;
+  text-decoration: none;
   font-weight: 700;
 }
-.login a:hover {
+
+header .sign-in a:hover {
   border-bottom: 2px solid #920101;
 }
 
-#nav2 {
-  width: 100vw;
-  height: 12vh;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+/*! NAV STICKY  */
+/*!-----------------------------------*/
+nav.sticky {
   position: sticky;
   top: 0rem;
   padding: 2rem;
@@ -62,64 +48,91 @@ body {
   text-align: center;
   z-index: 1;
 }
-#nav2 a {
-  padding: 10px;
-  margin-left: 30px;
+
+nav.sticky a {
   font-family: "DynaPuff", cursive;
-  font-weight: 500;
-  font-size: 1.2rem;
   text-decoration: none;
   color: black;
-  margin-right: 1rem;
-  letter-spacing: 1px;
+  margin-right: 0.8rem;
+  /* letter-spacing: 1px; */
 }
 
-#nav2 a:hover {
-  color: whitesmoke;
+nav.sticky a:hover {
+  color: white;
 }
-main {
-  width: 100vw;
-  height: 70vh;
 
-  background-image: url("./banner.jpg");
-  background-size: 100% 100%;
-  /* background-position: center; */
-  background-repeat: no-repeat;
+/*! NAV BANNER  */
+/*!-----------------------------------*/
+
+nav.banner {
   position: relative;
 }
-.text {
-  position: absolute;
-  top: 20vh;
-  left: 10vh;
+
+nav.banner img {
+  width: 100%;
+  max-height: calc(100vh - 300px);
 }
-main h2 {
+
+nav.banner .hero {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+nav.banner .hero h2 {
   color: white;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 0.5rem;
   text-shadow: 0px 2px 4px black;
 }
 
-main h3 {
+nav.banner .hero h3 {
   color: white;
-  font-size: 2rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
   color: red;
   text-shadow: 0px 2px 4px grey;
 }
 
-main button {
-  padding: 1rem;
+nav.banner button {
+  padding: 0.7rem;
   border: none;
   border-radius: 10px;
   background-color: #d9afd9;
   font-weight: 700;
 }
-main button:hover {
+nav.banner button:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
-section p {
-  width: 100vw;
-  height: auto;
+
+/*! MAIN  */
+/*!-----------------------------------*/
+
+main {
+  padding: 2rem;
   text-align: justify;
-  margin-top: 8px;
+}
+
+/*! SLACK ICON */
+/*!-----------------------------------*/
+.slack {
+  position: fixed;
+  bottom: 2rem;
+  right: 4rem;
+  font-size: 4rem;
+  width: 6rem;
+  height: 6rem;
+  background-color: red;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 0.16rem;
+}
+
+.slack:hover {
+  cursor: pointer;
+  outline: 2px solid red;
+  outline-offset: 10px;
+  color: black;
 }
