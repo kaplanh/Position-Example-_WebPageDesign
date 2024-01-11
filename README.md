@@ -1,6 +1,6 @@
 ## Project-009 : Position Example (Web Page Design)
 
-[Click Me !](https://kaplanh.github.io/position-practice/)
+[Click Me !](https://kaplanh.github.io/Position-Example-_WebPageDesign/)
 
 ![position Web Page Design example](https://github.com/kaplanh/position-practice/assets/101884444/624f4526-2a1e-4ce8-aa66-c07897274e5d)
 
